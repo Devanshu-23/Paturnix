@@ -6,6 +6,6 @@ export const Shape = ({ icon: IconComponent, color, size = 'w-10 h-10' }) => {
   const combinedClasses = `${color} ${size}`;
 
   return (
-    <IconComponent className={combinedClasses} strokeWidth={2.5} />
+    <IconComponent className={combinedClasses} strokeWidth={2.5} fill="currentColor" />
   );
 };
