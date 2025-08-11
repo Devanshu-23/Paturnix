@@ -16,13 +16,14 @@ export const getRoundConfig = (round) => {
   else gridSize = 10; // Default for rounds > 100
 
   // Determine Shape and Color count for the Options Panel
-  if (round >= 1 && round <= 10) { numShapes = 1; numColors = 2; }
+  if (round >= 1 && round <= 4) { numShapes = 1; numColors = 1; }
+  else if (round >= 5 && round <= 10) { numShapes = 1; numColors = 2; }
   else if (round >= 11 && round <= 20) { numShapes = 2; numColors = 2; }
   else if (round >= 21 && round <= 35) { numShapes = 2; numColors = 3; }
   else if (round >= 36 && round <= 50) { numShapes = 3; numColors = 3; }
   else if (round >= 51 && round <= 75) { numShapes = 3; numColors = 4; }
   else if (round >= 76 && round <= 100) { numShapes = 4; numColors = 4; }
-//   else { numShapes = 4; numColors = 4; } // Default
+  else { numShapes = 4; numColors = 4; } // Default
 
   return { gridSize, numShapes, numColors };
 };

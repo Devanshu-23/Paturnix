@@ -6,13 +6,15 @@ export const SHAPE_DEFINITIONS = [
   { id: 'triangle', name: 'Triangle', icon: Triangle },
   { id: 'square', name: 'Square', icon: Square },
   { id: 'circle', name: 'Circle', icon: Circle },
+  { id: 'star', name: 'Star', icon: Star },
 ];
 
 // Define all available colors
 export const COLOR_DEFINITIONS = [
-  { id: 'red', name: 'Red', tailwindClass: 'text-red-500' },
   { id: 'blue', name: 'Blue', tailwindClass: 'text-blue-500' },
   { id: 'green', name: 'Green', tailwindClass: 'text-green-500' },
+  { id: 'red', name: 'Red', tailwindClass: 'text-red-500' },
+  { id: 'yellow', name: 'Yellow', tailwindClass: 'text-yellow-500' },
 ];
 
 // Automatically generate all possible shape-color combinations
